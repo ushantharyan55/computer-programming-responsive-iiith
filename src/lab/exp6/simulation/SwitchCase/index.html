@@ -15,6 +15,8 @@
 	<div class = 'inputDivisionTitle' ><div class = 'initializePic' ></div><div class = 'initializeText'>Initialize</div></div>
 	<div class = 'inputDivisionBody' >
 		<div  class = 'instructionText' > Select the Day :</div>
+		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn1Id' value = '0' >
+		<label class = 'radioText' for = 'day_radio' >DAY : 0</label></div>
 		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn1Id' value = '1' >
 		<label class = 'radioText' for = 'day_radio' >DAY : 1</label></div>
 		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn2Id' value = '2'><label class = 'radioText' for = 'day_radio' >DAY : 2</label></div>
@@ -37,6 +39,8 @@
 		<div 	id = 'charId'         >&emsp;char* str;</div>
 		<div 	id = 'strId'          >&emsp;str = null;</div>
 		<div    id = 'switchId'       >&emsp;switch (DAY) {</div>
+		<div 	id = 'case1Id'        >&emsp;&emsp;case 0 : str = 'Invalid';</div>
+		<div 	id = 'case1BreakId' 	class='break'   >&emsp;&emsp;&emsp;break;</div>
 		<div 	id = 'case1Id'        >&emsp;&emsp;case 1 : str = 'Monday';</div>
 		<div 	id = 'case1BreakId' 	class='break'   >&emsp;&emsp;&emsp;break;</div>
 		<div 	id = 'case2Id'        >&emsp;&emsp;case 2 : str = 'Tuesday';</div>
@@ -54,8 +58,10 @@
 		<div 	id = 'defaultId'      >&emsp;&emsp;default : str = null;</div>
 		<div 	id = 'defaultBreakId'   class='break'	 >&emsp;&emsp;&emsp;break; </div>
 		<div 	id = 'closeBrc1Id'    >&emsp;}</div>
-		<div 	id = 'ifId'           >&emsp;if ( strcmp( str, 'Sunday' ) == 0 || strcmp(str,'Saturday')==0) {</div>
+		<div 	id = 'ifId'           >&emsp;if ( strcmp( str, 'Sunday' ) == 0 || strcmp(str,'Saturday')==0 ) {</div>
 		<div 	id = 'holidayId'      >&emsp;&emsp;printf ( 'HOLIDAY' ); }</div>
+		<div 	id = 'ifId'           >&emsp;else if ( strcmp( str, 'Invaild' ) == 0 ) {</div>
+		<div 	id = 'holidayId'      >&emsp;&emsp;printf ( 'INVALID INPUT' ); }</div>
 		<div 	id = 'elseIfId'       >&emsp;else if ( str != null ) {</div>
 		<div 	id = 'workingdayId'   >&emsp;&emsp;printf ( 'WORKING DAY' ); }</div>
 		<div 	id = 'elseId'         >&emsp;else {</div>
