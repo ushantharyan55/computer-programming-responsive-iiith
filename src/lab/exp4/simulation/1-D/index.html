@@ -5,11 +5,21 @@
 <!-- <link href = 'http://fonts.googleapis.com/css?family=Inconsolata' rel = 'stylesheet' type = 'text/css' > -->
 <script src = 'array.js' ></script>
 <title>Computer-Programming</title>
-<style>
-h1{
-font size:20px;
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("input[type='radio']").change(function(){
+if($(this).val()=="other")
+{
+$("#otherAnswer").show();
 }
-</style>
+else
+{
+$("#otherAnswer").hide();
+}
+});
+});
+</script>
 </head>
 
 <body>
@@ -25,9 +35,9 @@ font size:20px;
 			<button class = 'button okButton' id = 'btnOk' >OK</button>
 		</div><!-- end of arraySizeInputBlock -->
 		<div class = 'radioButtonDivision hide' id = 'inputButtonRadio' >
-            <div class = 'randomRadioButtonDivision' ><input type = 'radio' class = 'radiobutton' name = 'radio_group' id = 'btnRandom' ><label class = 'radioText' for = 'male' >Generate Random Values</label></div><!-- end of randomRadioButtonDivision -->
-            <div class = 'enterValueRadioButtonDivision' ><input type = 'radio' class = 'radiobutton' name = 'radio_group' id = 'btnManual'><label class = 'radioText' for = 'male' >Enter Values Manually</label></div><!-- end of enterValueRadioButtonDivision -->
-			<textarea class = 'arrayInputArea' name = 'firstname' placeholder = 'Enter values here in comma seperated format or seperated with space' id = 'userInput' ></textarea>
+            <div class = 'randomRadioButtonDivision' ><input type = 'radio' class = 'radiobutton' name="answer" value="yes" id = 'btnRandom' ><label class = 'radioText' for = 'male' >Generate Random Values</label></div><!-- end of randomRadioButtonDivision -->
+            <div class = 'enterValueRadioButtonDivision' ><input type = 'radio' class = 'radiobutton' name="answer" value="other" id = 'btnManual'><label class = 'radioText' for = 'male' >Enter Values Manually</label></div><!-- end of enterValueRadioButtonDivision -->
+			<input style="display:none;" type="text" name="otherAnswer" id="otherAnswer"/>
           	<div class = 'buttonHolder' ><button class = 'buttonDisable startButton' id = 'btnStart' disabled>Start</button><button class = 'buttonDisable nextButton' id = 'btnNext' disabled>Next</button></div><!-- end of buttonHolder -->
         </div><!-- end of radioButtonDivision -->
     </div><!-- end of inputDivisionBody -->
@@ -71,9 +81,7 @@ font size:20px;
 		<div class = 'sortingDivision' id = 'sortingDiv' ></div>
 		<div class = 'currentKeyPositionIndicator' >
 			<div class = 'currentKeyValue' id = 'key'>0</div>
-			<div class = 'textKeyValue' >Key Value </div>
-			<div class = 'textKeyValue' >&#8593</div>
-			
+			<div class = 'textKeyValue' >Key Value</div>
 		</div><!-- end of currentKeyPositionIndicator -->
 	</div><!-- end of resultDisplay -->
 </div><!-- end of outputDivision -->
