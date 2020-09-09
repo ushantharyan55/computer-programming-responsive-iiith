@@ -42,13 +42,15 @@
 	<div class = 'stepExecutionDisplay' >
 		<div id = "forLoopContent">
 			<div class = "hide" id = 'codeContentFor1'> int main(){ </div>
-			<div class = "hide" id = 'codeContentFor2'> &emsp;int p; </div>
+			<div class = "hide" id = 'codeContentFor2'> &emsp;int p=20; </div>
 			<div class = "hide" id = 'codeContentFor3'> &emsp;int fact=1; </div>
-			<div class = "hide" id = 'codeContentFor4'> &emsp;if(p==0) </div>
+			<div class = "hide" id = 'codeContentFor4'> &emsp;if(p==0 && p>20) </div>
+			<div class = "hide" id = 'codeContentFor4'> &emsp;alert("invalid input"); </div>
+			
 			<div class = "hide" id = 'codeContentFor5'> &emsp;{ </div>
 			<div class = "hide" id = 'codeContentFor6'> &emsp;&emsp;return 1; </div>
 			<div class = "hide" id = 'codeContentFor7'> &emsp;} </div>
-			<div class = "hide" id = 'forLoopHead'> &emsp;for(int i=p;i>=1;i--) </div>
+			<div class = "hide" id = 'forLoopHead'> &emsp;for(int i=0;i<=20;i++) </div>
 			<div class = "hide" id = 'forLoopBody1'> &emsp;{ </div>
 			<div class = "hide" id = 'forLoopBody2' >&emsp;&emsp; fact=fact*i;  </div>
 			<div class = "hide" id = 'forLoopTail'> &emsp;} </div>
@@ -57,34 +59,36 @@
 		</div>
 		<div id = "whileLoopContent">	
 			<div class = "hide" id = 'codeContentWhile1'> int main(){ </div>
-			<div class = "hide" id = 'codeContentWhile2'> &emsp;int p; </div>
+			<div class = "hide" id = 'codeContentWhile2'> &emsp;int p=20; </div>
 			<div class = "hide" id = 'codeContentWhile3'> &emsp;int fact=1; </div>
-			<div class = "hide" id = 'codeContentWhile4'> &emsp;if(p==0) </div>
+			<div class = "hide" id = 'codeContentFor4'> &emsp;if(p==0 && p>20) </div>
+			<div class = "hide" id = 'codeContentFor4'> &emsp;alert("invalid input"); </div>
 			<div class = "hide" id = 'codeContentWhile5'> &emsp;{ </div>
 			<div class = "hide" id = 'codeContentWhile6' >&emsp;&emsp; return 1; </div>
 			<div class = "hide" id = 'codeContentWhile7'> &emsp;} </div>
-			<div class = "hide" id = 'whileLoopHead'> &emsp;while (i>=1) </div>
+			<div class = "hide" id = 'whileLoopHead'> &emsp;while (i<=p) </div>
 			<div class = "hide" id = 'whileLoopBody1'> &emsp;{ </div>
 			<div class = "hide" id = 'whileLoopBody2'> &emsp;&emsp;fact=fact*i;  </div>
-			<div class = "hide" id = 'whileLoopBody3'> &emsp;&emsp;i--; </div>
+			<div class = "hide" id = 'whileLoopBody3'> &emsp;&emsp;i++; </div>
 			<div class = "hide" id = 'whileLoopTail'> &emsp;} </div>
 			<div class = "hide" id = 'codeContentWhile8'> &emsp;return fact; </div>
 			<div class = "hide" id = 'codeContentWhile9'> } </div>
 		</div>
 		<div id = "dowhileLoopContent">	
 			<div class = "hide" id = 'codeContentDoWhile1'> int main(){ </div>
-			<div class = "hide" id = 'codeContentDoWhile2'> &emsp;int p; </div>
+			<div class = "hide" id = 'codeContentDoWhile2'> &emsp;int p=20,int i=1; </div>
 			<div class = "hide" id = 'codeContentDoWhile3'> &emsp;int fact=1; </div>
-			<div class = "hide" id = 'codeContentDoWhile4'> &emsp;int i=p; </div>
-			<div class = "hide" id = 'codeContentDoWhile5'> &emsp;if(p==0) </div>
+			<div class = "hide" id = 'codeContentDoWhile4'> &emsp;int i++; </div>
+			<div class = "hide" id = 'codeContentFor4'> &emsp;if(p==0 && p>20) </div>
+			<div class = "hide" id = 'codeContentFor4'> &emsp;alert("invalid input"); </div>
 			<div class = "hide" id = 'codeContentDoWhile6'> &emsp;{ </div>
 			<div class = "hide" id = 'codeContentDoWhile7' > &emsp;&emsp;return 1; </div>
 			<div class = "hide" id = 'codeContentDoWhile8'>&emsp; } </div>
 			<div class = "hide" id = 'dowhileLoopHead'> &emsp;do </div>
 			<div class = "hide" id = 'dowhileLoopBody1'> &emsp;{ </div>
 			<div class = "hide" id = 'dowhileLoopBody2' > &emsp;&emsp;fact=fact*i;  </div>
-			<div class = "hide" id = 'dowhileLoopBody3'>&emsp;&emsp; i--; </div>
-			<div class = "hide" id = 'dowhileLoopTail'>&emsp; }while(i>=1); </div>
+			<div class = "hide" id = 'dowhileLoopBody3'>&emsp;&emsp; i++; </div>
+			<div class = "hide" id = 'dowhileLoopTail'>&emsp; }while(i<=p); </div>
 			<div class = "hide" id = 'codeTail'> } </div>
 		</div>
 		<div id = "nestedLoopContent">	
